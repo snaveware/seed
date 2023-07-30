@@ -20,7 +20,6 @@ import GlobalStyles from "../GlobalStyles";
 import { StyleSheet } from "react-native";
 import { Appearance } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { AutocompleteDropdownContextProvider } from "react-native-autocomplete-dropdown";
 import { StatusBar } from "expo-status-bar";
 
 export {
@@ -104,15 +103,13 @@ function RootLayoutNav() {
         <ThemeProvider
           value={colorScheme === "dark" ? DarkTheme : DefaultTheme}
         >
-          <AutocompleteDropdownContextProvider>
-            <AppThemeContext.Provider value={{ theme, setTheme }}>
-              <StatusBar style={"auto"} />
+          <AppThemeContext.Provider value={{ theme, setTheme }}>
+            <StatusBar style={"auto"} />
 
-              <Stack>
-                <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-              </Stack>
-            </AppThemeContext.Provider>
-          </AutocompleteDropdownContextProvider>
+            <Stack>
+              <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            </Stack>
+          </AppThemeContext.Provider>
         </ThemeProvider>
       </AuthContext.Provider>
     </>

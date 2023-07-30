@@ -34,6 +34,13 @@ export default function TabLayout() {
         //   borderTopRightRadius: 20,
         //   borderTopLeftRadius: 20,
         // },
+        tabBarBackground: () => {
+          return (
+            <View
+              style={{ borderWidth: 3, borderRadius: 20, borderColor: "green" }}
+            ></View>
+          );
+        },
       }}
     >
       <Tabs.Screen
@@ -48,11 +55,6 @@ export default function TabLayout() {
               </View>
             );
           },
-          // tabBarStyle: {
-          //   borderTopWidth: 3,
-          //   borderTopRightRadius: 20,
-          //   borderTopLeftRadius: 20,
-          // },
 
           tabBarShowLabel: false,
         }}
