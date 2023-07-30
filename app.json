@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Seed",
+    "slug": "seed",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.snave020.seed"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a602cd4e-df38-4d6c-8c1c-830517d15caf"
+      }
+    }
+  }
+}
