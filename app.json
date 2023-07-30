@@ -23,8 +23,11 @@
     },
     "extra": {
       "eas": {
-        "projectId": "a602cd4e-df38-4d6c-8c1c-830517d15caf"
+        "projectId": "61e61c0c-b04c-4486-b2f4-b71955b6e780"
       }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/61e61c0c-b04c-4486-b2f4-b71955b6e780"
     }
   }
 }
